@@ -1,5 +1,6 @@
-<div *ngFor="let book of bookList">
-    <img src="{{book.imgurl}}" alt="{{book.title}}">
-    <p>{{book.title}}</p>
-</div>
+<mat-grid-list cols="3" rowHeight="2:3" gutterSize="10">
+    <mat-grid-tile *ngFor="let book of bookList">
+        <app-book-card [aBook]="book"></app-book-card>
+    </mat-grid-tile>
+</mat-grid-list> 
 

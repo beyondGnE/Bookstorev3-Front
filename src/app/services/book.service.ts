@@ -17,6 +17,9 @@ export class BookService {
   private url:string = '/books'; 
   constructor(private http: HttpClient, private messageService: MessageService) { }
 
+  // NOTE: The service methods are called at the MOMENT an injected component
+  // subscribes to those methods!
+
   /**
    * Gets all books from the API
    * @return a list of books in an observable.
