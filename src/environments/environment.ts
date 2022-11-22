@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiUrl: 'http://localhost:8080/api'
+  // NOTE: CORS errors are largely the result of a miswritten api url, using https instead of http (research further),
+  // and perhaps CrossOrigin is not specified in Spring! Stay sharp!
 };
 
 /*
