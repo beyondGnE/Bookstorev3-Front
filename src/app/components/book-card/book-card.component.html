@@ -1,7 +1,9 @@
 <mat-card>
     <!-- <a (click)="toBookDetails(aBook)"></a> -->
-    <a routerLink=""></a>
-    <img mat-card-image src="{{aBook.imgurl}}" alt="{{aBook.title}}">
+    <!-- <a [routerLink]="['/books', aBook.id]"> -->
+        <a [routerLink]="['/books']" [queryParams]="{bookId: aBook.id}">
+        <img mat-card-image src="{{aBook.imgurl}}" alt="{{aBook.title}}">
+    </a>
     <p>{{aBook.title}}</p>
 </mat-card>
 

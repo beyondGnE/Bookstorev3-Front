@@ -9,13 +9,17 @@ import { AppComponent } from './app.component';
 import { BookTestComponent } from './components/book-test/book-test.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BookCardComponent } from './components/book-card/book-card.component';
+import { BookDetailsComponent } from './components/book-details/book-details.component';
+import { BookDetailsCardComponent } from './components/book-details/book-details-card/book-details-card.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     BookTestComponent,
-    BookCardComponent
+    BookCardComponent,
+    BookDetailsComponent,
+    BookDetailsCardComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,30 @@
+<div class="container p-5">
+    <h3> <a [routerLink]="['/home']">Product</a> > {{ book.title }}</h3>
+    <div class="row justify-content-center">
+        <div class="col-6 justify-content-center image">
+            <img [src]="book.imgurl">
+        </div>
+        <div class="col-4 content ">
+            <div class="card-title">
+                <p class="title m-5">{{ book.title }}</p>
+            </div>
+            <div class="card-bdy m-5">
+                <p class="description">{{ book.description }}</p>
+            </div>
+            <div class="stats ml-5 mt-3">
+                <p class="qty">Qty: {{ book.quantity }}</p>
+                <p class="price">Price: {{book.price | currency : 'USD'}}</p>
+            </div>
+            <div class="bt ml-5 mt-2">
+                <span class="cart-btn mr-2">
+                    <button mat-flat-button class="cart-btn" 
+                    (click)="placeholder()"
+                    >Add To Cart</button>
+                </span>
+                <span class="review-btn">
+                    <button class="review-btn" (click)="placeholder()" mat-flat-button>Review</button>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
